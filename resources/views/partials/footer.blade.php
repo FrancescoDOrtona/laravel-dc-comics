@@ -48,5 +48,25 @@
                     <small>All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <span class="text-primary">noted here</span>. Allrights reserved. <span class="text-primary">Cookies Settings</span></small>
                 </div>
             </div>        
-    </div>
+    </div>   
 </footer>
+
+<section class="footer-socials">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <button>
+                    Sign-up now!
+                </button>
+            </div>
+            <div class="col-6">
+                <span>follow us</span>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</section>
