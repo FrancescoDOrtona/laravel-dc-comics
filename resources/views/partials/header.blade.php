@@ -10,7 +10,9 @@
     <div class="container">
         <nav class="navbar row">
             <div class="col-2 navbar_logo">
-                <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo">
+                <a href="{{  route('home')}}">
+                    <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo">
+                </a>
             </div>
             <div class="col-8">
                 <ul class="text-uppercase navbar_items">
