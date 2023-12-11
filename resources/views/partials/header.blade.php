@@ -15,7 +15,7 @@
             <div class="col-8">
                 <ul class="text-uppercase navbar_items">
                     <li><a href="#">characters</a></li>
-                    <li><a href="{{ route('comics')}}">comics</a></li>
+                    <li><a href="{{ route('comics-page')}}">comics</a></li>
                     <li><a href="#">movies</a></li>
                     <li><a href="#">tv</a></li>
                     <li><a href="#">games</a></li>

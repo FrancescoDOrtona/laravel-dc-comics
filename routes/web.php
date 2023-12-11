@@ -129,4 +129,4 @@ Route::get('comics-page', function () {
         ]
       ];
     return view('comics',compact('comics'));
-})->name('comics');
+})->name('comics-page');
