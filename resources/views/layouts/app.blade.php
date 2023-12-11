@@ -10,7 +10,7 @@
     @vite('resources/js/app.js')
 </head>
 
-<body class="vh-100 d-flex flex-column">
+<body class=" d-flex flex-column">
 
     {{-- Header --}}
     @include('partials.header')

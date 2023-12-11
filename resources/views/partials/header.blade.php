@@ -31,4 +31,5 @@
             </div>
         </nav>
     </div>
+    <div class="jumbo" style="background-image:url({{ Vite::asset('resources/images/jumbotron.jpg') }}) "></div>
 </header>
