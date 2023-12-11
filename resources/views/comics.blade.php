@@ -11,6 +11,9 @@
                     </div> 
                 @endforeach
             </div>
+            <div class="d-flex justify-content-center pb-3 ">
+                <button class="bg-primary fw-bold text-light text-uppercase px-5 py-1 border border-0">load more</button>
+            </div>
         </div>
     </section>
 @endsection
