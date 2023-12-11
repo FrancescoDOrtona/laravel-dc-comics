@@ -24,3 +24,32 @@
         font-size: 13px;
     }
 }
+
+.buy-comics{
+    background-color: #0282F9;
+    padding: 40px 0px;
+}
+
+.buy-comics_structure{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.buy-comics_card{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    p{
+        text-transform: uppercase;
+        color: white;
+        font-size: 13px;
+    }
+
+    img{
+        width: 20%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+}
