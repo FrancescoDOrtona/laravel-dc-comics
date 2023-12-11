@@ -3,10 +3,21 @@
     color: white;
 }
 
+.title-badge{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    background-color: #0282F9;
+    padding: 10px 35px;
+}
+
 .comics_structure{
     grid-template-columns: repeat(6, 1fr);
     gap: 60px 20px;
     padding: 50px 0px;
+    position: relative;
 }
 
 .comics_card{
