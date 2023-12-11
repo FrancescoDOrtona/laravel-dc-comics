@@ -55,17 +55,17 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <button>
+                <button class="p-2 border border-2 border-primary text-uppercase text-light fw-bold bg-color-gray">
                     Sign-up now!
                 </button>
             </div>
-            <div class="col-6">
-                <span>follow us</span>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="col-6 socials_icons">
+                <span class="text-uppercase text-primary fw-bold fs-5">follow us</span>
+                <img src="{{ Vite::asset('resources/images/footer-facebook.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/images/footer-twitter.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/images/footer-youtube.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/images/footer-pinterest.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/images/footer-periscope.png') }}" alt="">
             </div>
         </div>
     </div>

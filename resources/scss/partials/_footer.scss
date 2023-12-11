@@ -11,4 +11,16 @@
 
 .footer-socials{
     background-color: #303030;
+    padding: 30px 0px;
+}
+
+.socials_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bg-color-gray{
+    background-color: #303030;
 }
