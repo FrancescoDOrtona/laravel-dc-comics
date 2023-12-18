@@ -33,8 +33,7 @@ class ComicController extends Controller
         'price'=> 'required|numeric|between:0,9999999.99',
         'series' => 'required|string|max:255',
         'sale_date' => 'required|date',
-        'type' => 'required|string|max:255',
-        
+        'type' => 'required|string|max:255',    
     ]);
 
     $comic = Comic::create($validatedData);
