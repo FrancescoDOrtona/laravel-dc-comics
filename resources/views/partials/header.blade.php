@@ -10,14 +10,14 @@
     <div class="container">
         <nav class="navbar row">
             <div class="col-2 navbar_logo">
-                <a href="{{  route('home')}}">
+                <a href="{{  route('comics.index')}}">
                     <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo">
                 </a>
             </div>
             <div class="col-8">
                 <ul class="text-uppercase navbar_items">
                     <li><a href="#">characters</a></li>
-                    <li><a href="{{ route('comics-page')}}">comics</a></li>
+                    <li><a href="{{  route('comics.index')}}">comics</a></li>
                     <li><a href="#">movies</a></li>
                     <li><a href="#">tv</a></li>
                     <li><a href="#">games</a></li>
