@@ -22,4 +22,22 @@ class ComicController extends Controller
     {
         return view('comics.create');
     }
+
+    public function store(Request $request)
+{
+    // Validazione dei dati
+    $validatedData = $request->validate([
+        'title' => 'required|string|max:255',
+        'thumb'=> 'required|string',
+        'description'=> 'required|string',
+        'price'=> 'required|numeric|between:0,9999999.99',
+        'series' => 'required|string|max:255',
+        'sale_date' => 'required|date',
+        'type' => 'required|string|max:255',
+        
+    ]);
+
+    $comic = Comic::create($validatedData);
+    return redirect()->route('comics.show', $comic->id);
+}
 }
