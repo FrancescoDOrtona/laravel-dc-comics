@@ -2,8 +2,13 @@
     <div class="bg-primary p-2">
         <div class="container">
             <div class="header__add">
-                <div>dc power visa</div>
-                <div>additional dc sites</div>
+                <div class="new-comic-btn">
+                    <a href="{{ route('comics.create')}}">Crea il tuo fumetto</a>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <p>dc power visa</p>
+                    <p>additional dc sites</p>
+                </div>
             </div>
         </div>
     </div>

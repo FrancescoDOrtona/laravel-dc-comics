@@ -1,12 +1,25 @@
 
 .header__add{
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     gap: 30px;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: white;
+}
+
+.new-comic-btn{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .navbar_logo{
