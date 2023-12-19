@@ -17,18 +17,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ComicController::class, 'index'])
     ->name('comics.index');
-    
+
 Route::get('/comics/create', [ComicController::class, 'create'])
     ->name('comics.create');
-    
+
 Route::get('/comics/{id}', [ComicController::class, 'show'])
     ->name('comics.show');
-    
+
 Route::post('/comics/store', [ComicController::class, 'store'])
     ->name('comics.store');
-    
+
 Route::get('/comics/{id}/edit', [ComicController::class,'edit'])
     ->name('comics.edit');
-    
+
 Route::put('/comics/{id}', [ComicController::class, 'update'])
     ->name('comics.update');
+
+Route::delete('/comics/{id}', [ComicController::class,'destroy'])
+    ->name('comics.destroy');

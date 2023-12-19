@@ -21,7 +21,11 @@
                     <p><span class="fw-bold">Tipo di fumetto:</span> {{ $comic->type }}</p>
                     <div>
                         <a href="{{ route('comics.edit',$comic) }}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="" class="btn btn-danger btn-sm">Delete</a>
+                        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="d-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure to delete this comic?')">Delete</button>
+                        </form>
                     </div>
                 </div>                
             </div>

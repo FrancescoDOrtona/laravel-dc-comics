@@ -3,6 +3,11 @@
 @section('content')
     <section class="comics">       
         <div class="container">
+            @if(session('success'))
+            <div class="alert alert-success text-center">
+                {{ session('success') }}
+            </div>
+            @endif
             <div class="d-grid comics_structure">
                 <div class="title-badge">
                     <h4>current series</h4>
