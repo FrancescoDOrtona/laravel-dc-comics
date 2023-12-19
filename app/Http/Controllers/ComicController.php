@@ -29,7 +29,7 @@ class ComicController extends Controller
     $validatedData = $request->validate([
         'title' => 'required|string|max:255',
         'thumb'=> 'required|string',
-        'description'=> 'required|string',
+        'description'=> 'required|text',
         'price'=> 'required|numeric|between:0,9999999.99',
         'series' => 'required|string|max:255',
         'sale_date' => 'required|date',
@@ -43,5 +43,23 @@ class ComicController extends Controller
     public function edit($id){
         $comic = Comic::findOrFail($id);
         return view('comics.edit', compact('comic'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'title' => 'required|string|max:255',
+            'thumb' => 'required|string',
+            'description' => 'required|text',
+            'price' => 'required|numeric|between:0,9999999.99',
+            'series' => 'required|string|max:255',
+            'sale_date' => 'required|date',
+            'type' => 'required|string|max:255',
+        ]);
+
+        $comic = Comic::findOrFail($id);
+        $comic->update($validatedData);
+
+        return redirect()->route('comics.show', $id);
     }
 }

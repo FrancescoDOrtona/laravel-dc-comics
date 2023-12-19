@@ -4,7 +4,7 @@
     <div class="container py-4">
         <h1 class="py-2">Edit Comic</h1>
 
-        <form action="" method="POST">
+        <form action="{{ route('comics.update', $comic->id) }}" method="POST">
             @csrf
             @method('PUT')
             @include('partials.form2')
