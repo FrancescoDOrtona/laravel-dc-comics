@@ -24,7 +24,7 @@ class ComicController extends Controller
     }
 
     public function store(Request $request)
-{
+    {
     // Validazione dei dati
     $validatedData = $request->validate([
         'title' => 'required|string|max:255',
@@ -38,5 +38,10 @@ class ComicController extends Controller
 
     $comic = Comic::create($validatedData);
     return redirect()->route('comics.show', $comic->id);
-}
+    }
+
+    public function edit($id){
+        $comic = Comic::findOrFail($id);
+        return view('comics.edit', compact('comic'));
+    }
 }
