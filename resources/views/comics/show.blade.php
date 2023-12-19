@@ -15,12 +15,12 @@
                 <div class="col-8">
                     <h1 class="pb-4">{{ $comic->title }}</h1>                   
                     <p>{!! $comic->description !!}</p>
-                    <p><span class="fw-bold">Prezzo:</span> {{ $comic->price }} &dollar;</p>
-                    <p><span class="fw-bold">Serie:</span> {{ $comic->series }}</p>
-                    <p><span class="fw-bold">Data di vendita:</span> {{ $comic->sale_date }}</p>
-                    <p><span class="fw-bold">Tipo di fumetto:</span> {{ $comic->type }}</p>
-                    <div>
-                        <a href="{{ route('comics.edit',$comic) }}" class="btn btn-primary btn-sm">Edit</a>
+                    <p><span class="fw-bold">Price:</span> {{ $comic->price }} &dollar;</p>
+                    <p><span class="fw-bold">Comic:</span> {{ $comic->series }}</p>
+                    <p><span class="fw-bold">Sale date:</span> {{ $comic->sale_date }}</p>
+                    <p><span class="fw-bold">Comic type:</span> {{ $comic->type }}</p>
+                    <div class="pt-3">
+                        <a href="{{ route('comics.edit',$comic) }}" class="btn btn-primary btn-sm me-1">Edit</a>
                         <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Delete
                         </button>
