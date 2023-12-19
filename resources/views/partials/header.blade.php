@@ -34,7 +34,7 @@
                 </ul>
             </div>
             <div class="col-2">
-                <input type="search" name="searchbar" id="searchbar" placeholder="Search">
+                <input class="navbar-search" type="search" name="searchbar" id="searchbar" placeholder="Search">
             </div>
         </nav>
     </div>
