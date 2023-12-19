@@ -70,3 +70,8 @@
         </div>
     </div>
 </section>
+<a href="#" >
+    <span class="scroll-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </span>
+</a>

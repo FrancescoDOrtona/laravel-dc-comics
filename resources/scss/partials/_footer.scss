@@ -24,3 +24,16 @@
 .bg-color-gray{
     background-color: #303030;
 }
+
+.scroll-top{
+    z-index: 999;
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 14px;
+    background: #0c70de;
+    border-radius: 50%;
+    color: #fff;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+}
