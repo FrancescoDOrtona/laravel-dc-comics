@@ -1,4 +1,5 @@
 <footer class="footer" style="background-image: url({{ Vite::asset('resources/images/footer-bg.jpg') }})">
+    <div class="col-6 bg-img-dc"></div>
     <div class="container">
         <div class="row">
             <div class="col-2">                
@@ -41,7 +42,10 @@
                     <li>DC Universe</li>
                     <li>DC Power Visa</li>
                 </ul>
-            </div>            
+            </div>
+            {{-- <div class="col-6 bg-img-dc">
+                <img src="{{ Vite::asset('resources/images/dc-logo-bg.png') }}" alt="">
+            </div>             --}}
         </div>       
             <div class="row">
                 <div class="col-6 footer-copy">
