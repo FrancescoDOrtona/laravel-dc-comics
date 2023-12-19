@@ -2,16 +2,18 @@
 
 @section('content')
     <section class="comics">       
-        <div class="container">
-            @if(session('success'))
-            <div class="alert alert-success text-center">
-                {{ session('success') }}
+        <div class="position-relative container">
+            <div class="title-badge">
+                <h4>current series</h4>
             </div>
+            @if(session('success'))
+            <div class="pt-5">
+                <div class="alert alert-success text-center mb-0">
+                    {{ session('success') }}
+                </div>
+            </div>            
             @endif
             <div class="d-grid comics_structure">
-                <div class="title-badge">
-                    <h4>current series</h4>
-                </div>
                 @foreach ($comics as $comic)
                    <div class="comics_card">
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
