@@ -10,6 +10,15 @@
     color: white;
 }
 
+.header__info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    p{
+        margin-bottom: 0;
+    }
+}
+
 .new-comic-btn{
     border: 2px solid white;
     border-radius: 5px;

@@ -5,7 +5,7 @@
                 <div class="new-comic-btn">
                     <a href="{{ route('comics.create')}}">Create your Comic</a>
                 </div>
-                <div class="d-flex gap-2 align-items-center">
+                <div class="header__info">
                     <p>dc power visa</p>
                     <p>additional dc sites</p>
                 </div>
