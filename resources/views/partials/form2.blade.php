@@ -11,7 +11,7 @@
 
 <div class="mb-3">
     <label for="description" class="form-label">Description</label>
-    <textarea class="form-control" name="description" id="description" rows="3" value="{{ $comic->description }}"></textarea>
+    <textarea class="form-control" name="description" id="description" rows="10">{{ $comic->description }}</textarea>
 </div>
 
 <div class="input-group mb-3">
@@ -27,7 +27,7 @@
 
 <div class="mb-3">
     <label for="date" class="form-label">Sale Date</label>
-    <input type="date" class="form-control" name="sale_date" id="date" value="{{ $comic->date }}">
+    <input type="date" class="form-control" name="sale_date" id="date" value="{{ $comic->sale_date }}">
 </div>
 
 <div class="mb-3">

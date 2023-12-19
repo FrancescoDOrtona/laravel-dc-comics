@@ -29,7 +29,7 @@ class ComicController extends Controller
     $validatedData = $request->validate([
         'title' => 'required|string|max:255',
         'thumb'=> 'required|string',
-        'description'=> 'required|text',
+        'description'=> 'required|string',
         'price'=> 'required|numeric|between:0,9999999.99',
         'series' => 'required|string|max:255',
         'sale_date' => 'required|date',
@@ -50,7 +50,7 @@ class ComicController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'thumb' => 'required|string',
-            'description' => 'required|text',
+            'description' => 'required|string',
             'price' => 'required|numeric|between:0,9999999.99',
             'series' => 'required|string|max:255',
             'sale_date' => 'required|date',
@@ -60,6 +60,6 @@ class ComicController extends Controller
         $comic = Comic::findOrFail($id);
         $comic->update($validatedData);
 
-        return redirect()->route('comics.show', $id);
+        return redirect()->route('comics.show', $id)->with('success', 'Comic Updated successfully.');
     }
 }

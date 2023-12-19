@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__add">
                 <div class="new-comic-btn">
-                    <a href="{{ route('comics.create')}}">Crea il tuo fumetto</a>
+                    <a href="{{ route('comics.create')}}">Create your Comic</a>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
                     <p>dc power visa</p>
